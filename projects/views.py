@@ -1,5 +1,3 @@
-from django.shortcuts import render
-
 # 데이터 처리
 from projects.models import Project
 from projects.serializers import ProjectSerializer
@@ -21,7 +19,6 @@ class ProjectList(APIView):
 
     # 새로운 프로젝트를 작성할 때 (POST)
     def post(self, request):
-        # request.data는 사용자의 입력 데이터
         serializer = ProjectSerializer(data=request.data)
         if serializer.is_valid(): # 유효성 검사
             serializer.save() # 저장
