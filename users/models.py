@@ -41,7 +41,6 @@ class Consumer_Users(Users):
   # gender를 선택권을 주는 CharField로 수정하기 위한 튜플 => choices 파라미터에 이용
   # GENDER_MALE 값이 DB에 저장되고, "Male"은 (admin)form에서 보여지는 값
 
-  avatar = models.ImageField(blank=True)
   # blank=True의 경우 form에도 적용되어 값을 필수로 채우지 않아도 됨
   # null=True는 DB에서만 사용됨
   gender = models.CharField(choices=GENDER_CHOICES, max_length=10)
