@@ -2,6 +2,7 @@ appdirs==1.4.4
 asgiref==3.4.1
 click==8.0.1
 Django==3.2.6
+django-cors-headers==3.8.0
 django-mathfilters==1.0.0
 djangorestframework==3.12.4
 lazy-object-proxy==1.6.0
