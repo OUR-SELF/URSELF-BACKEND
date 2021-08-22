@@ -15,7 +15,7 @@ class Users(AbstractUser):
         (USERTYPE_COMPANY, "company"),
     )
     
-    profile_img = models.ImageField(blank=True, null=True)
+    profile_img = models.ImageField(default="default-img.png", null=True)
     usertype = models.CharField(max_length=8,choices=USERTYPE_CHOICES)
     name = models.CharField(max_length=50)
     address_num = models.CharField(max_length=30)
