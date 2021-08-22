@@ -35,7 +35,7 @@ class Project(models.Model):
   details = models.CharField(max_length=3000)
   counted_user_num = models.IntegerField(default=0)
 
-  thumbnail_image = models.ImageField(blank=True, null=True)
+  thumbnail_image = models.ImageField(default="default-img.png")
   detail_image = models.ImageField(blank=True, null=True)
 
 
